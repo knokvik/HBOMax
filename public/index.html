@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO Max</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://hips.hearstapps.com/hmg-prod/images/3xj-pofb-400x400-1590594586.png" class="rounded-full" type="image/png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body class="font-[Montserrat] bg-gray-950">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  
+    <div id="intro" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;  backdrop-filter: blur(8px);" class=" absolute bg-black z-50 flex flex-col items-center justify-center duration-200 animate__animated">
+        <img src="hbo-max-logo-black-removebg-preview.png" class=" animate__animated animate__fadeInLeft xl:w-[22rem] lg:w-[22rem] w-[15rem]"/>
+    </div>  
+  
+  <script>
+  
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+        document.getElementById('intro').classList.add('animate__fadeOut');
+        document.getElementById('intro').classList.remove('z-50');
+  
+      }, 1500);
+      setTimeout(function() {
+        document.getElementById('intro').classList.add('hidden');
+      }, 2500);
+    });
+  
+  </script>
+  </body>
+</html>
